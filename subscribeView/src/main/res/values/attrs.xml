@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- subscribeview 的自定义属性-->
+    <declare-styleable name="subscribe">
+        <attr name="textContet" format="string" />
+        <attr name="textColor" format="color" />
+        <attr name="spBackground" format="reference" />
+        <attr name="textSize"  format="dimension"/>
+    </declare-styleable>
+
+</resources>
