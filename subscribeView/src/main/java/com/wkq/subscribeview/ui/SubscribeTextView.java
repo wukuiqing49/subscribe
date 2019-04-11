@@ -43,7 +43,7 @@ public class SubscribeTextView extends FrameLayout implements TextWatcher, View.
 
         TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.subscribe);
         textColor = typedArray.getColor(R.styleable.subscribe_textColor, Color.BLACK);
-        text = typedArray.getString(R.styleable.subscribe_textContet);
+        text = typedArray.getString(R.styleable.subscribe_text);
         textBg = typedArray.getDrawable(R.styleable.subscribe_spBackground);
         textSize = typedArray.getDimension(R.styleable.subscribe_textSize, 15);
         binding = DataBindingUtil.inflate(LayoutInflater.from(context), R.layout.layout_subscribe_view, this, true);
@@ -87,12 +87,12 @@ public class SubscribeTextView extends FrameLayout implements TextWatcher, View.
         binding.tv.setVisibility(VISIBLE);
     }
 
-    public void setTextContet(String content) {
+    public void setText(String content) {
         hideLoading();
         binding.tv.setText(content);
     }
 
-    public String geTextContet() {
+    public String geText() {
         return binding.tv.getText() == null ? "" : binding.tv.getText().toString();
     }
 

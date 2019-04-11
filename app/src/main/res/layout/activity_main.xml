@@ -22,7 +22,7 @@
             android:layout_marginTop="50dp"
             subscribe:spBackground="@{data.show?@drawable/shape_vod_unsubscribe:@drawable/shape_vod_subscribe}"
             subscribe:textColor="@{data.show?@color/colorAccent:@color/colorPrimary}"
-            subscribe:textContet="@{data.content}" />
+            subscribe:text="@{data.content}" />
 
         <Button
             android:id="@+id/bt"

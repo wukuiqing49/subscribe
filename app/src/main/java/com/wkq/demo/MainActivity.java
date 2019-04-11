@@ -3,6 +3,7 @@ package com.wkq.demo;
 import android.databinding.DataBindingUtil;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.View;
 
 import com.wkq.demo.databinding.ActivityMainBinding;
